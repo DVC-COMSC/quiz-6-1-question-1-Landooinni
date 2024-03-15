@@ -19,7 +19,7 @@ void getTwoValues(int& begin, int& end)
 int getNextPrime(int begin)
 {
 int k,h,flag=0;
-	for (h = begin; h < (begin+10);h++)
+	for (h = begin; h < (begin+1000);h++)
 	{
         flag=0;
 		for (  k= 2; k <= (h/2); k++)
@@ -32,7 +32,7 @@ int k,h,flag=0;
 		if (flag==0)
 		{
             return h;
-            h=begin+10;
+            h=begin+1000;
 		}
 	}
 }
@@ -41,7 +41,7 @@ int getPrevPrime(int end)
 {
 
 int k,h,flag=0;
-	for (h = end; h > (end-10);h--)
+	for (h = end; h > (end-1000);h--)
 	{
         flag=0;
 		for (  k= 2; k <= (h/2); k++)
@@ -54,7 +54,7 @@ int k,h,flag=0;
 		if (flag==0)
 		{
             return h;
-            h=end-10;
+            h=end-1000;
 		}
 	}
 }
